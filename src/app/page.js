@@ -1,3 +1,4 @@
+
 import FriendsPage from "./friends/page";
 import Homepage from "./home/page";
 

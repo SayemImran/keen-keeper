@@ -1,14 +1,19 @@
 "use client";
 
+import { useContact } from "@/context/ContextProvider";
 import { Phone, MessageSquare, Video } from "lucide-react";
+import { toast } from "react-toastify";
 
 const FriendActions = ({ user }) => {
+  const { addLog } = useContact();
   const handleContact = (type) => {
     const information = {
       name: user.name,
       contactType: type,
       dateTime: new Date().toISOString(),
     };
+    toast.success(`Contacted ${user.name} via ${type}!`);
+    addLog(information);
     console.log("Contacted", information);
   };
 

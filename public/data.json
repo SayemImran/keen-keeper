@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "picture": "https://i.ibb.co.com/sdk6X2J9/aiony-haust-3-TLl-97-HNJo-unsplash.jpg",
+    "email": "john@example.com",
+    "days_since_friend": 12,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university. Love hiking together.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Ahmed",
+    "picture": "https://i.ibb.co.com/V0X5BthJ/ayo-ogunseinde-6-W4-F62s-N-y-I-unsplash.jpg",
+    "email": "sarah@example.com",
+    "days_since_friend": 5,
+    "status": "on track",
+    "tags": ["work", "team"],
+    "bio": "Colleague from marketing team.",
+    "goal": 10,
+    "next_due_date": "2025-07-25"
+  },
+  {
+    "id": 3,
+    "name": "Michael Lee",
+    "picture": "https://i.ibb.co.com/Q7sRKHH1/albert-dera-ILip77-Sbm-OE-unsplash.jpg",
+    "email": "michael@example.com",
+    "days_since_friend": 20,
+    "status": "almost due",
+    "tags": ["gym", "buddy"],
+    "bio": "Workout partner at the gym.",
+    "goal": 7,
+    "next_due_date": "2025-07-10"
+  },
+  {
+    "id": 4,
+    "name": "Ayesha Khan",
+    "picture": "https://i.ibb.co.com/NP5pR1n/stefan-stefancik-QXev-Dflbl8-A-unsplash.jpg",
+    "email": "ayesha@example.com",
+    "days_since_friend": 2,
+    "status": "on track",
+    "tags": ["family"],
+    "bio": "Cousin, lives nearby.",
+    "goal": 7,
+    "next_due_date": "2025-07-22"
+  },
+  {
+    "id": 5,
+    "name": "David Smith",
+    "picture": "https://i.ibb.co.com/Y70j9nDz/ian-dooley-d1-UPki-Fd04-A-unsplash.jpg",
+    "email": "david@example.com",
+    "days_since_friend": 30,
+    "status": "overdue",
+    "tags": ["business"],
+    "bio": "Met at a startup conference.",
+    "goal": 15,
+    "next_due_date": "2025-07-05"
+  },
+  {
+    "id": 6,
+    "name": "Fatima Noor",
+    "picture": "https://i.ibb.co.com/sdk6X2J9/aiony-haust-3-TLl-97-HNJo-unsplash.jpg",
+    "email": "fatima@example.com",
+    "days_since_friend": 8,
+    "status": "on track",
+    "tags": ["school", "friend"],
+    "bio": "Old school friend, loves painting.",
+    "goal": 14,
+    "next_due_date": "2025-07-28"
+  },
+  {
+    "id": 7,
+    "name": "Chris Evans",
+    "picture": "https://i.ibb.co.com/V0X5BthJ/ayo-ogunseinde-6-W4-F62s-N-y-I-unsplash.jpg",
+    "email": "chris@example.com",
+    "days_since_friend": 18,
+    "status": "overdue",
+    "tags": ["project", "client"],
+    "bio": "Client from recent freelance project.",
+    "goal": 10,
+    "next_due_date": "2025-07-12"
+  },
+  {
+    "id": 8,
+    "name": "Nina Patel",
+    "picture": "https://i.ibb.co.com/Q7sRKHH1/albert-dera-ILip77-Sbm-OE-unsplash.jpg",
+    "email": "nina@example.com",
+    "days_since_friend": 1,
+    "status": "on track",
+    "tags": ["neighbor"],
+    "bio": "Neighbor, often chats in evenings.",
+    "goal": 7,
+    "next_due_date": "2025-07-21"
+  },
+  {
+    "id": 9,
+    "name": "Omar Hassan",
+    "picture": "https://i.ibb.co.com/NP5pR1n/stefan-stefancik-QXev-Dflbl8-A-unsplash.jpg",
+    "email": "omar@example.com",
+    "days_since_friend": 25,
+    "status": "overdue",
+    "tags": ["travel", "friend"],
+    "bio": "Travel buddy from last trip.",
+    "goal": 20,
+    "next_due_date": "2025-07-08"
+  },
+  {
+    "id": 10,
+    "name": "Emily Chen",
+    "picture": "https://i.ibb.co.com/Y70j9nDz/ian-dooley-d1-UPki-Fd04-A-unsplash.jpg",
+    "email": "emily@example.com",
+    "days_since_friend": 6,
+    "status": "on track",
+    "tags": ["book club"],
+    "bio": "Met at local book club.",
+    "goal": 12,
+    "next_due_date": "2025-07-26"
+  }
+]

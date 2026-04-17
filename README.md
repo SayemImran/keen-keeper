@@ -1,36 +1,156 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧠 Keen Keeper
 
-## Getting Started
+Keen Keeper is a modern friendship management web app that helps you stay connected with the people who matter most. Track interactions, manage contact goals, and visualize your communication habits — all in one place.
 
-First, run the development server:
+---
+
+## 🚀 Live Features
+
+- 👥 Manage your friends with detailed profiles  
+- 📅 Track interactions like calls, texts, and video chats  
+- 📜 View a timeline of all your communication history  
+- 📊 Analyze your interaction patterns with visual charts  
+- 🔔 Get instant feedback with toast notifications  
+- 📱 Fully responsive across mobile, tablet, and desktop  
+
+---
+
+## 🛠️ Technologies Used
+
+- **Next.js (App Router)** – Application framework  
+- **React.js** – UI development  
+- **Tailwind CSS** – Styling & responsiveness  
+- **Recharts** – Data visualization (Pie Chart)  
+- **Lucide React** – Icons  
+- **React Hot Toast / Sonner** – Notifications  
+
+---
+
+## ✨ Key Features
+
+### 🔝 Navbar
+- Logo aligned to the left  
+- Navigation links: Home, Timeline, Stats  
+- Icons included for each link  
+- Active route highlighting  
+
+---
+
+### 🎯 Banner Section
+- Centered title and subtitle  
+- CTA button (e.g., "Add a Friend") with icon  
+- Summary cards displaying key insights  
+
+---
+
+### 👫 Friends Management
+- Display friends from a JSON dataset  
+- Each card includes:
+  - Profile picture  
+  - Name  
+  - Days since last contact  
+  - Tags  
+  - Status (color-coded: overdue / almost due / on-track)  
+- Responsive 4-column grid layout  
+- Click to view detailed profile  
+
+---
+
+### 👤 Friend Details Page
+
+#### Left Panel:
+- Profile image, name, status  
+- Tags, bio, and email  
+- Action buttons:
+  - ⏰ Snooze  
+  - 📦 Archive  
+  - 🗑️ Delete  
+
+#### Right Panel:
+- 📊 Stats Cards:
+  - Days Since Contact  
+  - Goal  
+  - Next Due Date  
+
+- 🎯 Relationship Goal Card  
+- ⚡ Quick Check-In:
+  - Call 📞  
+  - Text 💬  
+  - Video 📹  
+
+---
+
+### ⚡ Interaction Logging
+- Clicking Call / Text / Video:
+  - Adds a timeline entry instantly  
+  - Includes current date & interaction type  
+  - Displays toast notification  
+
+---
+
+### 📜 Timeline Page
+- Displays all interaction logs  
+- Each entry includes:
+  - Date  
+  - Icon (Call / Text / Video)  
+  - Title (e.g., "Call with Alex")  
+
+- 🔍 Filter by interaction type (Call / Text / Video)
+
+---
+
+### 📊 Friendship Analytics (Stats Page)
+- Pie chart visualization using Recharts  
+- Shows distribution of:
+  - Calls  
+  - Texts  
+  - Video interactions  
+
+---
+
+### 🦶 Footer
+- Clean and minimal footer based on design  
+
+---
+
+### 📱 Responsive Design
+- Fully optimized for:
+  - Mobile  
+  - Tablet  
+  - Desktop  
+
+---
+
+## ⚙️ Additional Requirements Implemented
+
+- ✅ **404 Page** for invalid routes  
+- ✅ Loading animation while fetching friends data  
+- ✅ Toast notifications for interactions  
+- ✅ Proper routing (no reload errors after deployment)  
+
+---
+
+## 🌟 Optional Enhancements
+
+- 🔄 Sort timeline entries (Newest / Oldest)  
+- 🔍 Search timeline by friend name or interaction type  
+
+---
+
+
+---
+
+## 📌 Getting Started
 
 ```bash
+# Clone the repo
+git clone https://github.com/your-username/keen-keeper.git
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Developed by
+Sayem Imran Khan 

@@ -38,7 +38,7 @@ const typeConfig = {
   },
 };
 
-const TimelinePage = ()=> {
+const TimelinePage = () => {
   const { logs } = useContact();
   const [activeFilter, setActiveFilter] = useState("all");
 
@@ -48,7 +48,7 @@ const TimelinePage = ()=> {
       : logs.filter((log) => log.contactType === activeFilter);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="w-4/8 mx-auto px-4 py-8">
       <h1 className="text-2xl font-semibold text-gray-900 mb-6">Timeline</h1>
 
       {/* Filter Tabs */}
@@ -111,5 +111,5 @@ const TimelinePage = ()=> {
       )}
     </div>
   );
-}
+};
 export default TimelinePage;

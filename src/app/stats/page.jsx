@@ -11,9 +11,9 @@ import {
 import { useContact } from "@/context/ContextProvider";
 
 const COLORS = {
-  message: "#7C3AED", // purple
-  call: "#1F2937", // dark gray
-  video: "#22C55E", // green
+  message: "#7C3AED",
+  call: "#1F2937",
+  video: "#22C55E",
 };
 
 const StatsPage = () => {
@@ -27,36 +27,48 @@ const StatsPage = () => {
   }));
 
   return (
-    <div className="w-2/4 mx-auto">
-      <h1 className="text-3xl font-bold">Friendship Analysis</h1>
+    <div className="w-full px-4 sm:px-6 lg:w-2/4 mx-auto">
+      <h1 className="text-2xl sm:text-3xl font-bold text-center sm:text-left">
+        Friendship Analysis
+      </h1>
 
-      <div className="mt-15 mb-15 w-full mx-auto h-[320px] flex flex-col items-center justify-center rounded-md shadow-md p-6">
-        <div>
-          <p className="text-green-900 font-semibold">By interaction type</p>
+      <div className="mt-8 sm:mt-12 mb-10 w-full h-[300px] sm:h-[350px] flex flex-col items-center justify-center rounded-md shadow-md p-4 sm:p-6 bg-white">
+        <p className="text-green-900 font-semibold text-sm sm:text-base mb-2">
+          By interaction type
+        </p>
+
+        <div className="w-full h-full">
+          <ResponsiveContainer width="100%" height="100%">
+            <PieChart>
+              <Pie
+                data={chartData}
+                dataKey="value"
+                nameKey="name"
+                innerRadius="55%"
+                outerRadius="70%"
+                paddingAngle={5}
+                stroke="white"
+              >
+                {chartData.map((entry, index) => (
+                  <Cell key={index} fill={COLORS[entry.name]} />
+                ))}
+              </Pie>
+
+              <Tooltip />
+
+              <Legend
+                verticalAlign="bottom"
+                iconType="circle"
+                wrapperStyle={{
+                  fontSize: "12px",
+                }}
+              />
+            </PieChart>
+          </ResponsiveContainer>
         </div>
-        <ResponsiveContainer width="100%" height="100%">
-          <PieChart>
-            <Pie
-              data={chartData}
-              dataKey="value"
-              nameKey="name"
-              innerRadius={70} // makes it donut
-              outerRadius={100} // thickness
-              paddingAngle={6} // gap between segments (important for look)
-              stroke="white" // clean separation like your image
-            >
-              {chartData.map((entry, index) => (
-                <Cell key={index} fill={COLORS[entry.name]} />
-              ))}
-            </Pie>
-
-            <Tooltip />
-
-            <Legend verticalAlign="bottom" iconType="circle" />
-          </PieChart>
-        </ResponsiveContainer>
       </div>
     </div>
   );
 };
+
 export default StatsPage;

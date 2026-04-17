@@ -10,7 +10,7 @@ const FriendsDetails = async ({ params }) => {
   if (!user) return <div className="p-6">User not found</div>;
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-0 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-5 mb-10 mt-10">
+    <div className="max-w-6xl mx-auto px-4 sm:px-2 lg:px-0 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-5 mb-10 mt-10">
       {/* LEFT SIDEBAR */}
       <div className="flex flex-col items-center space-y-4">
         <div className="flex flex-col items-center gap-2 shadow-md rounded-md p-5 sm:p-6 w-full text-center">
@@ -44,7 +44,7 @@ const FriendsDetails = async ({ params }) => {
 
           <p className="italic text-gray-400 text-sm mt-2">{`"${user.bio}"`}</p>
 
-          <p className="text-sm text-gray-500">Preferred: email</p>
+          <p className="text-sm text-gray-500">{user.email}</p>
         </div>
 
         {/* ACTION BUTTONS */}
@@ -67,7 +67,7 @@ const FriendsDetails = async ({ params }) => {
       <div className="lg:col-span-2 flex flex-col space-y-6">
         {/* STATS GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="p-6 sm:p-8 flex flex-col items-center justify-center rounded-md shadow-md text-center">
+          <div className="p-6 sm:p- flex flex-col items-center justify-center rounded-md shadow-md text-center">
             <span className="text-2xl sm:text-3xl font-semibold text-green-900">
               {user.days_since_friend}
             </span>
